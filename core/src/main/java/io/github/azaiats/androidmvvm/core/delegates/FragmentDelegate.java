@@ -77,6 +77,7 @@ public class FragmentDelegate<T extends ViewDataBinding, S extends MvvmViewModel
             viewModelKey = savedInstanceState.getInt(VIEW_MODEL_KEY_NAME, 0);
         }
         super.onCreate();
+        saved = false;
     }
 
     @Override
